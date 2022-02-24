@@ -1,7 +1,7 @@
 -- To measure the performance of a set of sql statements enter the code between the START and END COMMAND comments
 -- To change the number of iterations change all 3 lines with the comment "# of loops"
 
-BEGIN TRANSACTION IncremenetTransaction;
+BEGIN TRANSACTION IncrementTransaction;
 
 SET XACT_ABORT ON;
 GO 100 -- # of loops
@@ -24,5 +24,5 @@ SET NOCOUNT OFF;
 
 GO 100 -- # of loops
 
-COMMIT TRANSACTION IncremenetTransaction;
+COMMIT TRANSACTION IncrementTransaction;
 GO 100 -- # of loops
